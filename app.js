@@ -12,7 +12,7 @@ appPassword: process.env.MICROSOFT_APP_PASSWORD
 });
 // Listen for messages from users
 server.post('/foodbot', connector.listen());
-// Echo their message back.. just parrotting!
+// Getting the messages back
 var bot = new builder.UniversalBot(connector, function (session) {
 session.send("You said: %s", session.message.text);
 });
