@@ -1,6 +1,6 @@
 var restify = require('restify');
 var builder = require('botbuilder');
-// Lets setup the Restify Server
+// Connect to restify
 var server = restify.createServer();
 server.listen(process.env.port || process.env.PORT || 3978, function () {
 console.log('%s listening to %s', server.name, server.url);
@@ -16,3 +16,4 @@ server.post('/foodbot', connector.listen());
 var bot = new builder.UniversalBot(connector, function (session) {
 session.send("You said: %s", session.message.text);
 });
+//
