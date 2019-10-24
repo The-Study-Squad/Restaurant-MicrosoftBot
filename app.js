@@ -11,7 +11,7 @@ appId: process.env.MICROSOFT_APP_ID,
 appPassword: process.env.MICROSOFT_APP_PASSWORD
 });
 // Listen for messages from users
-server.post('/foodbot', connector.listen());
+server.post('/Restaurant-MicrosoftBot', connector.listen());
 // Getting the messages back
 var bot = new builder.UniversalBot(connector, function (session) {
 session.send("You said: %s", session.message.text);
