@@ -12,4 +12,4 @@ using a data service called Zomato and then going to the Skype Channel.
 8. Integrating the bot with Skype
 
 Download Channel emulator- https://github.com/Microsoft/BotFramework-Emulator/releases/tag/v3.5.31
-Zomato API Key- https://developers.zomato.com/api:
+Zomato API Key- https://developers.zomato.com/api
